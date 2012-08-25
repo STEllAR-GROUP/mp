@@ -16,7 +16,7 @@ mark_as_advanced(MPFR_INCLUDE_DIR MPFR_LIBRARY)
 find_package(Boost)
 
 include_directories(${MPFR_INCLUDE_DIR})
-include_directories(${Boost_INCLUDE_DIRS})
+include_directories(${Boost_INCLUDE_DIR})
 
 set(MP_LIBRARY_SOURCES
     src/mpfr/mpfr.cpp
