@@ -49,7 +49,7 @@ namespace mp
         // Wrapping init and set functions:
         // http://www.mpfr.org/mpfr-current/mpfr.html#Initialization-Functions 
 
-        // Initializes data, sets default precision and teh value to NaN
+        // Initializes data, sets default precision and the value to NaN
         // Does not throw
         mpfr()
         {
@@ -178,7 +178,7 @@ namespace mp
         template <typename T>
         mpfr & operator=(T const & value)
         {
-            mpfr tmp(tmp);
+            mpfr tmp(value);
             swap(*this, tmp);
             return *this;
         }
